@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <fieldset>
+                    <legend>Wybór drużyn</legend>
+                    <div>
+                        <p>Gospodarze:</p>
+                        <select name="hosts" id="hosts">
+                        </select>
+                    </div>
+                    <div>
+                        <p>Goście:</p>
+                        <select name="guests" id="guests">
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Wynik</legend>
+                    <div>
+                        <p>Wynik gospodarzy:</p>
+                        <input type="number" id="hosts-score" min="0" value="0">
+                    </div>
+                    <div>
+                        <p>Wynik gości:</p>
+                        <input type="number" id="guests-score" min="0" value="0">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dogrywka</legend>
+                    <div>
+                        <p>Będzie:</p>
+                        <input type="radio" name="overtime" id="Yovertime">
+                    </div>
+                    <div>
+                        <p>Nie będzie:</p>
+                        <input type="radio" name="overtime" id="Novertime" checked>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Extra</legend>
+                    <div>
+                        <p>Żółte kartki:</p>
+                        <input type="checkbox" name="yellow-cards" id="yellow-cards">
+                    </div>
+                    <div>
+                        <p>Czerwone kartki:</p>
+                        <input type="checkbox" name="red-cards" id="red-cards">
+                    </div>
+                    <div>
+                        <p>Rzuty karne:</p>
+                        <input type="checkbox" name="penalty-shots" id="penalty-shots">
+                    </div>
+                </fieldset>
+                <div>
+                    <button id="show-results">Wyświetl</button>
+                    <button id="reset">Czyść</button>
+                </div>
+            </fieldset>
+            <div id="display">
+
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

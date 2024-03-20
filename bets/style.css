@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset:has(legend) {
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset > div {
+    display: inline;
+}
+
+fieldset > div > p {
+    display: inline;
+}
